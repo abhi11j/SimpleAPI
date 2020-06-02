@@ -7,12 +7,12 @@ using System.Linq;
 
 namespace SimpleAPI.Test
 {
-    public class UnitTest1
+    public class WeatherForecastTest
     {
         Mock<ILogger<WeatherForecastController>> _objMockLogger;
         WeatherForecastController _controller;
 
-        public UnitTest1(){
+        public WeatherForecastTest(){
             _objMockLogger = new Mock<ILogger<WeatherForecastController>>();
             _controller = new WeatherForecastController(_objMockLogger.Object);
         }
